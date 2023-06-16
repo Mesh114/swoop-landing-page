@@ -11,8 +11,8 @@ body {
 
  /* scene */
 .scene {
-    width: 300px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     /* space between card-scenes */
     margin: 16px;
 
@@ -20,6 +20,7 @@ body {
     perspective: 600px;
 }
 
+/* card */
 /* card */
 .card {
     width: 100%;
@@ -31,6 +32,9 @@ body {
 
     /* preserve child 3d   */
     transform-style: preserve-3d;
+
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
 /* face */
@@ -38,17 +42,21 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
+    background: rgb(1, 59, 38);
+    font-family: Arial, sans-serif; 
+    font-size: 40px; 
+    color: #ffffff;
 
     /* hide back face   */
     backface-visibility: hidden;
 }
 
 .front {
-    background: coral;
+    background: rgb(1, 87, 55);
 }
 
 .back {
-    background: cornflowerblue;
+    background: rgb(1, 68, 49);
     /* flip it default   */
     transform: rotateY(180deg);
 }
